@@ -1,13 +1,23 @@
-# 
+# Expose random message from scraper into HTML page in the web server container.
 
-App container 
+- App container:
 
 run the script which wiill
 
 1. Download the scraper file 
-2. Print random message in index.html in a shared folder every 10 seconds 
+2. Print random message in index.html located in a shared folder every 10 seconds 
 
-docker-compose up -d 
 
-check 127.0.0.1 port 80
+- webserver (Nginx)
+
+1. expose index.html from the shared folder into Nginx Documnet root in /usr/share/nginx/html 
+
+
+# To run the project 
+
+```docker-compose up -d``` 
+
+
+check ```http://localhost```
+
 you will find a cote every 10 seconds
