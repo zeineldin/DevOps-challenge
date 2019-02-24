@@ -1,12 +1,9 @@
 # Expose random message from scraper into HTML page in the web server container.
 
-- App container:
-
-run the script which wiill
+- App container ( will run the app which will do the following ) 
 
 1. Download the scraper file 
 2. Print random message in index.html located in a shared folder every 10 seconds 
-
 
 - webserver (Nginx)
 
