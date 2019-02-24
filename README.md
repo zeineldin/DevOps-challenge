@@ -1,4 +1,4 @@
-# Expose random message from scraper into HTML page in the web server container.
+## Expose random message from scraper into HTML page in the web server container.
 
 - App container ( will run the app which will do the following ) 
 
@@ -10,7 +10,7 @@
 1. expose index.html from the shared folder into Nginx Documnet root in /usr/share/nginx/html 
 
 
-# To run the project 
+## To run the project 
 
 ```docker-compose up -d``` 
 
