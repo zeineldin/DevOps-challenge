@@ -1,0 +1,15 @@
+version: '2'
+services:
+
+  app:
+    build: app/.
+    volumes: 
+     - ./share:/opt
+  web-server:
+    image: nginx
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+    volumes: 
+     - ./share:/usr/share/nginx/html/
