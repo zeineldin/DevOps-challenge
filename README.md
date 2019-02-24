@@ -17,4 +17,4 @@
 
 check ```http://localhost```
 
-you will find a cote every 10 seconds
+you will find a messages changes every 10 seconds
