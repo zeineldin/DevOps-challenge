@@ -5,11 +5,13 @@ services:
     build: app/.
     volumes: 
      - ./share:/opt
+    restart: always
   web-server:
     image: nginx
     depends_on:
       - app
     ports:
       - "80:80"
+    restart: always
     volumes: 
      - ./share:/usr/share/nginx/html/
